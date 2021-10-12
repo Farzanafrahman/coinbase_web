@@ -3,6 +3,8 @@
     <Header />
     <IntroSection />
     <WelcomeSection />
+    <Rating />
+    <Footer />
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import Header from "../components/Header.vue"
 import IntroSection from "../components/IntroSection.vue"
 import WelcomeSection from "../components/WelcomeSection.vue"
+import Rating from "../components/Rating.vue"
+import Footer from "../components/Footer.vue"
 
 export default {
   name: "Homepage",
@@ -17,6 +21,8 @@ export default {
     Header,
     IntroSection,
     WelcomeSection,
+    Rating,
+    Footer,
   }
   
 }
