@@ -7,6 +7,7 @@
           <div class="welcome-img">
             <img src="@/assets/img/welcome_img.png" alt="">
           </div>
+
           <div class="welcome-text">
             <h5>Welcome to CoinBase</h5>
             <p>We have the best rates . Simply start your exchange right now. 
@@ -23,23 +24,27 @@
     </b-row>
   </b-container>
 </div>
-  
 </template>
 
 <script>
 export default {
   name: "WelcomeSection",
-  
 }
 </script>
 
 <style lang="scss" scoped>
   .welcome-content {
     display: flex;
-    margin: 50px 20px ;
+    .welcome-img {
+      // max-width: 65%;
+      img {
+        height: 300px;
+      }
+    }
     .welcome-text {
-      padding-left: 40px;
       text-align: left;
+      margin: 0 30px;
+      max-width: 40%;
       h5{
         color: #c81a9c;
         padding-top: 30px;

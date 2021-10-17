@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="intro-bg">
       <b-container>
         <b-row>
@@ -19,8 +18,6 @@
         </b-row>
       </b-container>
     </div>
-  </div>
-  
 </template>
 
 <script>
@@ -32,15 +29,12 @@ export default {
 
 <style lang="scss" scoped>
 
-  .intro-bg {
-    height: 100%;
-    background-image: url("~@/assets/img/intro_bg.png");
-    background-position: center bottom -72px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-
+.intro-bg {
+  height: 100%;
+  background-image: url("~@/assets/img/intro_bg.png");
+  background-position: center bottom -58px;
+  background-repeat: no-repeat;
+  background-size: cover;
   .intro-content {
     display: flex;
     align-items: center;
@@ -48,11 +42,10 @@ export default {
     color: #fff;
     text-align: left;
     vertical-align: top;
-
     .intro-text {
       max-width: 50%;
       margin: 0 50px 50px;
-      padding: 0 90px 50px;
+      padding: 0 42px 50px;
       h5 {
         font-weight: 300;
         font-size: 24px;
@@ -77,10 +70,15 @@ export default {
         text-transform: uppercase;
       }
     }
-    .intro-img img {
-     max-height: 350px;
-     margin: 50px 0 80px;
+    .intro-img {
+      img {
+        max-height: 350px;
+        margin: 50px 0 80px;
+      }
     }
   }
+}
+
+  
 
 </style>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "active": false,
+    "date": "12 May, 2021",
+    "category": "Technology",
+    "title": "HOW TO SELL YOUR ITUNES GIFTCARD WITH US .",
+    "description": "Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum voluptaria in. Ad mei modus quodsi complectitur, postea...",
+    "button": "Learn More"
+  },
+  {
+    "id": 2,
+    "active": true,
+    "date": "14 October, 2021",
+    "category": "Business",
+    "title": "ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER...",
+    "description": "Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum voluptaria in. Ad mei modus quodsi complectitur, postea...",
+    "button": "Read More"
+  },
+  {
+    "id": 3,
+    "active": false,
+    "date": "06 Aug, 2021",
+    "category": "Lifestyle",
+    "title": "EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT.",
+    "description": "Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum voluptaria in. Ad mei modus quodsi complectitur, postea...",
+    "button": "Adapt More"
+  }
+]
