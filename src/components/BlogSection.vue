@@ -43,16 +43,16 @@ export default {
       word-spacing: 2px;
       position: relative;
       margin-bottom: 30px;
-    }
-    h5:after {
-      content: " ";
-      height: 5px;
-      width: 30px;
-      position: absolute;
-      background-color: #FD749B;
-      border-radius: 100px;
-      left: calc(50% - 18px);
-      top: calc(50% + 14px);
+      &:after {
+        content: " ";
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        background-color: #FD749B;
+        border-radius: 100px;
+        left: calc(50% - 18px);
+        top: calc(50% + 14px);
+      }
     }
     p {
       max-width: 25%;

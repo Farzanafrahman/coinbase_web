@@ -5,13 +5,13 @@
           <b-col>
               <div class="intro-content">
                 <div class="intro-text">
-                  <h5>We provide easy solution to exchange your <span>Bitcoin/ GiftCard for money</span></h5>
+                  <p>HOME/ABOUT US</p>
+                  <h5>Great Service, Professional support</h5>
                   <p>CoinBase is a platform for trading your bitcoin and giftcard at the best rate, why not give us a trial.</p>
-                  <button class="get-started btn">Get Started</button>
                 </div>
 
                 <div class="intro-img">
-                  <img src="@/assets/img/intro_img.png" alt="">
+                  <img src="@/assets/img/about_intro.png" alt="">
                 </div>
               </div>
           </b-col>
@@ -23,7 +23,7 @@
 <script>
 
 export default {
-  name: "IntroSection",
+  name: "AboutIntro",
 }
 </script>
 
@@ -43,17 +43,14 @@ export default {
     text-align: left;
     vertical-align: top;
     .intro-text {
-      max-width: 50%;
+      max-width: 40%;
       margin: 0 50px 50px;
       padding: 0 42px 50px;
       h5 {
         font-weight: 300;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 40px;
         word-spacing: 4px;
-        span {
-          font-weight: bold;
-        }
       }
       p {
         padding-top: 10px;
@@ -73,7 +70,7 @@ export default {
     .intro-img {
       img {
         max-height: 350px;
-        margin: 50px 0 145px;
+        margin: 22px 0 185px;
       }
     }
   }

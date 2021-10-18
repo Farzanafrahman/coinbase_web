@@ -12,11 +12,15 @@
                 <div class="title">Latest Exchanges</div>
               </div>
               <div class="details">
-                <div class="info"><span><img src="@/assets/img/icons/bitcoin.svg" alt=""></span> BTC<span>We Buy @N350/$</span></div>
-                <div class="info">Bank Transfer<span>NGN</span></div>
-                <div class="info">Bitcoin BTC<span>Bank Transfer NGN</span></div>
+                <div class="info"><span class="info-1"><img src="@/assets/img/icons/bitcoin.svg" alt="">BTC</span><span class="info-2">We Buy <b>@N350/$</b></span></div>
+                <div class="info"><span class="info-1"><img src="@/assets/img/icons/bank.png" alt="">Bank Transfer</span><span class="info-2">NGN</span></div>
+                <div class="info"><span Bank class="info-1">Bitcoin BTC Bank Transfer NGN</span></div>
               </div>
-              
+              <div class="details">
+                <div class="info"><span class="info-1"><img src="@/assets/img/icons/eth.png" alt="">ETH</span><span class="info-2">We Buy <b>@N345/$</b></span></div>
+                <div class="info"><span class="info-1"><img src="@/assets/img/icons/bitcoin.svg" alt="">Bitcoin</span><span class="info-2">NGN</span></div>
+                <div class="info"><span Bank class="info-1">Amazon Card Bank Transfer NGN</span></div>
+              </div>
             </div>
           </div>
         </b-col>
@@ -24,7 +28,6 @@
     </b-container>
   </div>
 </div>
-
 </template>
 
 <script>
@@ -44,18 +47,17 @@ export default {
     padding: 4rem 0;
     .rect-box {
       background-color: #fff;
+      box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.30);
       border-radius: 30px;
-      height: 60%;
       margin: 80px 0;
       .grid-container {
-        padding-top: 20px;
         text-align: left;
         .header {
           display: flex;
           justify-content: space-between;
           border-bottom: 2px solid #bbb;
           .title {
-            padding: 0 48px 20px;
+            padding: 20px 48px 20px;
             text-transform: uppercase;
             line-height: 30px;
             word-spacing: 2px;
@@ -68,10 +70,24 @@ export default {
         .details {
           display: flex;
           justify-content: space-between;
-          padding-top: 30px;
           .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-size: 12px;
-            // padding-left: 10px;
+            padding: 15px 40px;
+            width: 33.3%;
+            .info-1 {
+              img {
+                display: inline-block;
+                min-width: 20px;
+                margin-right: 10px;
+              }
+            }
+            .info-2 {
+              padding: 10px;
+              font-size: 10px;
+            }
           }
         }
       }
