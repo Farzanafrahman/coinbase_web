@@ -11,7 +11,7 @@
             <ul class="d-flex">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About Us</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="/blog">Blog</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>

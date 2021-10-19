@@ -1,9 +1,8 @@
 <template>
   <div>
     <Header />
-    <AboutIntro />
-    <History />
-    <TeamIntro />
+    <BlogIntro />
+    <BlogContent />
     <NewsLetter />
     <Footer />
   </div>
@@ -11,9 +10,8 @@
 
 <script>
 import Header from "../components/Header.vue"
-import AboutIntro from "../components/AboutIntro.vue"
-import History from "../components//History"
-import TeamIntro from "../components//TeamIntro.vue"
+import BlogIntro from "../components/BlogIntro.vue"
+import BlogContent from "../components/BlogContent.vue"
 import NewsLetter from "../components/NewsLetter.vue"
 import Footer from "../components/Footer.vue"
 
@@ -21,9 +19,8 @@ export default {
   name: "Aboutpage",
   components: {
     Header,
-    AboutIntro,
-    History,
-    TeamIntro,
+    BlogIntro,
+    BlogContent,
     NewsLetter,
     Footer,
   }

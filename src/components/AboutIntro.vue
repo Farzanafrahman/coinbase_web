@@ -9,7 +9,6 @@
                   <h5>Great Service, Professional support</h5>
                   <p>CoinBase is a platform for trading your bitcoin and giftcard at the best rate, why not give us a trial.</p>
                 </div>
-
                 <div class="intro-img">
                   <img src="@/assets/img/about_intro.png" alt="">
                 </div>
@@ -56,15 +55,6 @@ export default {
         padding-top: 10px;
         font-size: 12px;
         font-weight: lighter;
-      }
-      .get-started {
-        border-radius: 100px;
-        background: #fff;
-        color: #FD749B;
-        font-size: 10px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
       }
     }
     .intro-img {
