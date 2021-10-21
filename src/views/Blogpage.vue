@@ -16,7 +16,7 @@ import BlogForm from "../components/BlogForm.vue"
 import Footer from "../components/Footer.vue"
 
 export default {
-  name: "Aboutpage",
+  name: "BlogPage",
   components: {
     Header,
     BlogIntro,
@@ -28,5 +28,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

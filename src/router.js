@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Homepage from './views/Homepage.vue'
-import Aboutpage from './views/Aboutpage.vue'
-import Blogpage from './views/Blogpage.vue'
+import Vue from "vue"
+import Router from "vue-router"
+import HomePage from "./views/HomePage.vue"
+import AboutPage from "./views/AboutPage.vue"
+import BlogPage from "./views/BlogPage.vue"
 
 Vue.use(Router);
 
@@ -10,19 +10,19 @@ export default new Router({
   mode: "history",
   routes: [
     {
-      path: '/',
-      name: 'Home',
-      component: Homepage,
+      path: "/",
+      name: "Home",
+      component: HomePage,
     },
     {
-      path: '/about',
-      name: 'About',
-      component: Aboutpage,
+      path: "/about",
+      name: "About",
+      component: AboutPage,
     },
     {
-      path: '/blog',
-      name: 'Blog',
-      component: Blogpage,
+      path: "/blog",
+      name: "Blog",
+      component: BlogPage,
     }
   ]
 })

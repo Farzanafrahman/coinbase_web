@@ -7,16 +7,12 @@
 <script>
 // import Homepage from './views/Homepage.vue'
 export default {
-  name: 'App',
-  components: {
-    // Homepage,
-  },
+  name: "App",
 };
 </script>
 
 <style>
 @import "../src/assets/font/stylesheet.css";
-
 * {
   margin: 0;
   padding: 0;

@@ -5,7 +5,7 @@
         <b-col>
           <h5 class="title">Our history</h5>
           <div class="timeline">
-            <div class="branch" v-for="list in 5" :key="list">
+            <div class="branch" v-for="list in 3" :key="list">
               <h5>May 2010</h5>
               <p>Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. 
                 Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. 
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "History",
+  name: "AboutHistory",
 }
 </script>
 

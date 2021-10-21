@@ -2,8 +2,8 @@
   <div>
     <Header />
     <AboutIntro />
-    <History />
-    <TeamIntro />
+    <AboutHistory />
+    <AboutTeam />
     <NewsLetter />
     <Footer />
   </div>
@@ -12,18 +12,18 @@
 <script>
 import Header from "../components/Header.vue"
 import AboutIntro from "../components/AboutIntro.vue"
-import History from "../components//History"
-import TeamIntro from "../components//TeamIntro.vue"
+import AboutHistory from "../components/AboutHistory.vue"
+import AboutTeam from "../components/AboutTeam.vue"
 import NewsLetter from "../components/NewsLetter.vue"
 import Footer from "../components/Footer.vue"
 
 export default {
-  name: "Aboutpage",
+  name: "AboutPage",
   components: {
     Header,
     AboutIntro,
-    History,
-    TeamIntro,
+    AboutHistory,
+    AboutTeam,
     NewsLetter,
     Footer,
   }
@@ -31,5 +31,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

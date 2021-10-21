@@ -13,7 +13,7 @@
             <img src="@/assets/img/icons/twitter.svg" alt="">
             <img src="@/assets/img/icons/instagram.svg" alt="">
           </div>
-          <p class="copyright">&copy; 2019 Designed by Cr8tiv_yemmy</p>
+          <p class="copyright">&copy; 2019 Designed by Creativ_Team</p>
         </b-col>
         <b-col class="second-col">
           <b-row>

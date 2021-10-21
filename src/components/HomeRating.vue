@@ -1,5 +1,4 @@
 <template>
-<div>
   <div class="rating-bg">
     <b-container>
       <b-row>
@@ -27,13 +26,11 @@
       </b-row>
     </b-container>
   </div>
-</div>
 </template>
 
 <script>
 export default {
-  name: "Rating",
-  
+  name: "HomeRating",
 }
 </script>
 
@@ -93,6 +90,5 @@ export default {
       }
     }
   }
-
 </style>
   
