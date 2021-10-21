@@ -3,7 +3,7 @@
     <Header />
     <BlogIntro />
     <BlogContent />
-    <NewsLetter />
+    <BlogForm />
     <Footer />
   </div>
 </template>
@@ -12,7 +12,7 @@
 import Header from "../components/Header.vue"
 import BlogIntro from "../components/BlogIntro.vue"
 import BlogContent from "../components/BlogContent.vue"
-import NewsLetter from "../components/NewsLetter.vue"
+import BlogForm from "../components/BlogForm.vue"
 import Footer from "../components/Footer.vue"
 
 export default {
@@ -21,7 +21,7 @@ export default {
     Header,
     BlogIntro,
     BlogContent,
-    NewsLetter,
+    BlogForm,
     Footer,
   }
 }
