@@ -13,6 +13,7 @@ export default {
 
 <style>
 @import "../src/assets/font/stylesheet.css";
+@import "../src/assets/styles/hamburger.css";
 * {
   margin: 0;
   padding: 0;
