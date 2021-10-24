@@ -1,9 +1,9 @@
 <template>
-  <div class="subscribe m-5">
+  <div class="subscribe">
     <b-container>
       <b-row>
         <b-col>
-          <div class="content mb-5">
+          <div class="content">
             <h5>Subscribe our newsletter</h5>
             <p>Subscribe to our newsletter for daily/weekly update of our products and services.</p>
           </div>
@@ -27,7 +27,9 @@ export default {
 
 <style lang="scss" scoped>
   .subscribe {
+    margin: 48px;
     .content {
+      margin: 30px 0;
       h5 {
         color: #c81a9c;
         font-weight: bold;
@@ -82,8 +84,29 @@ export default {
         text-align: center;
         text-transform: uppercase;
         border: none;
-        width: 40%;
+        // width: 40%;
         margin-left: 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .subscribe {
+      margin: 20px;
+      .content {
+        margin: 20px;
+        h5 {
+          font-size: 16px;
+        }
+        p {
+          max-width: 50%;
+        }
+      }
+      .subscription {
+        display: block;
+        max-width: 40%;
+        .discover-btn {
+          margin: 12px 0;
+        }
       }
     }
   }

@@ -63,4 +63,16 @@ export default {
       }
     }
   }
+  @media only screen and (max-width: 1080px) {
+    .intro-bg {
+      .intro-content {
+        .intro-img {
+          img {
+            max-height: 330px;
+            margin: 0 0 140px;
+          }
+        }
+      }
+    }
+  } 
 </style>

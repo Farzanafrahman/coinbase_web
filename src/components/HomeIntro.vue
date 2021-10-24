@@ -9,7 +9,7 @@
                   <p>CoinBase is a platform for trading your bitcoin and giftcard at the best rate, why not give us a trial.</p>
                   <button class="get-started btn">Get Started</button>
                 </div>
-                <div class="intro-img">
+                <div class="intro-img mobile-only">
                   <img src="@/assets/img/intro_img.png" alt="">
                 </div>
               </div>
@@ -35,14 +35,14 @@ export default {
     .intro-content {
       display: flex;
       align-items: center;
-      padding-top: 20px;
+      // padding-top: 20px;
       color: #fff;
       text-align: left;
       vertical-align: top;
       .intro-text {
         max-width: 50%;
-        margin: 0 50px 50px;
-        padding: 0 42px 50px;
+        margin: 40px;
+        padding: 26px 42px 26px;
         h5 {
           font-weight: 300;
           font-size: 24px;
@@ -70,9 +70,34 @@ export default {
       .intro-img {
         img {
           max-height: 350px;
-          margin: 50px 0 145px;
+          margin: 20px 0 110px;
         }
       }
     }
   }
+  @media only screen and (max-width: 576px) {
+    .intro-bg {
+      background-position: center top;
+      background-size: 240%;
+      .intro-content {
+        display: block;
+        text-align: center;
+        .intro-text {
+          max-width: 100%;
+          margin: 20px 40px;
+          h5 {
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+        .intro-img {
+          margin: 20px;
+          img {
+            max-height: 280px;
+            margin: 0 0 60px;
+          }
+        }
+      }
+    }
+  } 
 </style>

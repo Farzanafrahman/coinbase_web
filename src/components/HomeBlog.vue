@@ -1,13 +1,13 @@
 <template>
-  <div class="blog-section m-5">
+  <div class="blog-section">
     <b-container>
       <b-row>
         <b-col>
-          <div class="content mb-5">
+          <div class="content">
             <h5>Our Blog</h5>
             <p>Get to know the latest stuff via our blog post</p>
           </div>
-          <div class="slider d-flex m-2">
+          <div class="slider d-flex">
             <div class="blog-group" v-for="blog in blogs" :key="blog.id" :class="{active : blog.active}"> 
               <p class="date">{{blog.date}}<span> | </span>{{blog.category}}</p>
               <h5 class="title">{{blog.title}}</h5>
@@ -35,7 +35,9 @@ export default {
 
 <style lang="scss" scoped>
   .blog-section {
+    margin: 38px;
     .content {
+      margin-bottom: 50px;
       h5 {
         color: #c81a9c;
         font-weight: bold;
@@ -62,6 +64,7 @@ export default {
       }
     }
     .slider {
+      margin: 8px;
       .blog-group {
         padding: 34px;
         text-align: left;
@@ -84,6 +87,7 @@ export default {
           line-height: 26px;
         }
         .descrip {
+          // margin: 10px 0;
           font-size: 8px;
           line-height: 18px;
           color: #a2a2a2;
@@ -97,7 +101,7 @@ export default {
           text-align: center;
           text-transform: uppercase;
           border: none;
-          width: 40%;
+          // width: 40%;
         }
         &.active {
           transform: scale(1.2);
@@ -115,6 +119,31 @@ export default {
           .blog-btn {
             background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
           }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .blog-section {
+      margin: 20px;
+      .content {
+        margin-bottom: 30px;
+        p {
+          max-width: 100%;
+        }
+      }
+      .slider {
+        .blog-group {
+          padding: 18px;
+          transform: scale(0.9);
+          .title {
+            font-size: 14px;
+            min-height: 40%;
+            margin: 14px 0;
+          }
+        &.active {
+          transform: scale(1);
+        }
         }
       }
     }

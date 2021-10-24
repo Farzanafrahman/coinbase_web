@@ -41,12 +41,13 @@ export default {
     background-position: center 20%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4rem 0;
+    // padding: 50px 0;
+    // margin: 20px 0;
     .rect-box {
       background-color: #fff;
       box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.30);
       border-radius: 30px;
-      margin: 80px 0;
+      margin: 50px 0;
       .grid-container {
         text-align: left;
         .header {
@@ -54,7 +55,7 @@ export default {
           justify-content: space-between;
           border-bottom: 2px solid #bbb;
           .title {
-            padding: 20px 48px 20px;
+            padding: 20px 48px;
             text-transform: uppercase;
             line-height: 30px;
             word-spacing: 2px;
@@ -75,15 +76,42 @@ export default {
             padding: 15px 40px;
             width: 33.3%;
             .info-1 {
+              padding: 10px;
               img {
+                padding: 10px;
                 display: inline-block;
                 min-width: 20px;
-                margin-right: 10px;
+                // margin-right: 10px;
               }
             }
             .info-2 {
               padding: 10px;
               font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .rating-bg {
+      padding: 0 0;
+      .rect-box {
+        margin: 30px 0;
+        .grid-container {
+          .header {
+            .title {
+              text-align: center;
+              padding: 10px;
+              font-size: 12px;
+            }
+          }
+          .details {
+            .info {
+              padding: 10px 20px;
+              .info-1, .info-2 {
+                text-align: center;
+              }
             }
           }
         }
