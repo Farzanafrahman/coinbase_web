@@ -34,15 +34,14 @@ export default {
     background-size: cover;
     .intro-content {
       display: flex;
-      align-items: center;
-      // padding-top: 20px;
+      // align-items: center;
       color: #fff;
       text-align: left;
       vertical-align: top;
       .intro-text {
-        max-width: 50%;
+        max-width: 40%;
         margin: 40px;
-        padding: 26px 42px 26px;
+        padding: 40px;
         h5 {
           font-weight: 300;
           font-size: 24px;
@@ -69,22 +68,49 @@ export default {
       }
       .intro-img {
         img {
-          max-height: 350px;
+          max-height: 280px;
           margin: 20px 0 110px;
         }
       }
     }
   }
-  @media only screen and (max-width: 576px) {
+  // @media only screen and (max-width: 576px) {
+  //   .intro-bg {
+  //     background-position: center top;
+  //     background-size: 260%;
+  //     .intro-content {
+  //       display: block;
+  //       text-align: center;
+  //       .intro-text {
+  //         max-width: 100%;
+  //         margin: 20px;
+  //         padding: 20px;
+  //         h5 {
+  //           font-size: 16px;
+  //           line-height: 30px;
+  //         }
+  //       }
+  //       .intro-img {
+  //         margin: 20px;
+  //         img {
+  //           max-height: 280px;
+  //           margin: 0;
+  //         }
+  //       }
+  //     }
+  //   }
+  // } 
+  @media only screen and (max-width: 768px) {
     .intro-bg {
       background-position: center top;
-      background-size: 240%;
+      background-size: 260%;
       .intro-content {
         display: block;
         text-align: center;
         .intro-text {
           max-width: 100%;
-          margin: 20px 40px;
+          margin: 20px;
+          padding: 20px;
           h5 {
             font-size: 16px;
             line-height: 30px;
@@ -94,10 +120,10 @@ export default {
           margin: 20px;
           img {
             max-height: 280px;
-            margin: 0 0 60px;
+            margin: 0;
           }
         }
       }
     }
-  } 
+  }
 </style>

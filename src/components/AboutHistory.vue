@@ -113,4 +113,37 @@ export default {
       margin-bottom: 0;
     }
   }
+  @media only screen and (max-width: 768px) {
+    .timeline {
+      width: 500px;
+      &:after {
+        left: 50px;
+      }
+      .branch {
+        text-align: left;
+        padding: 12px;
+        width: 70%;
+        left: 70px;
+        &:before {
+          right: auto;
+          left: -26px;
+          height: 16px;
+          width: 16px;
+        }
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+        &:nth-of-type(2n) {
+          flex-direction: row;
+          align-self: flex-start;
+          &:before {
+            left: -24px;
+          }
+        }
+      }
+    }
+  }
 </style>

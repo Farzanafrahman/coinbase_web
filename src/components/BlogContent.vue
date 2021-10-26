@@ -46,7 +46,7 @@
               </p>
             </div>
           </div>
-            <div class="tag-link d-flex justify-content-between">
+            <div class="tag-link">
               <b-row>
                 <b-col class="tag">
                   <p>Tags: Business, Capital, Finance</p>
@@ -113,8 +113,10 @@ export default {
       }
     }
     .tag-link {
-      margin: 14px 0;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+      margin: 14px 0;
       font-size: 14px;
       .tag {
         font-weight: bold;
@@ -125,7 +127,7 @@ export default {
           padding-left: 0;
         }
         li {
-            display: inline-block;
+          display: inline-block;
           padding-left: 16px;
         }
       }
@@ -156,6 +158,54 @@ export default {
           color: #000;
           cursor: pointer;
           font-weight: bold;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .blog-content {
+      width: 80%;
+      font-size: 12px;
+      .content {
+        .content1, .content2 {
+          margin: 10px 0;
+        }
+        .content-img {
+          margin: 20px 0;
+          p {
+            img {
+              float: right;
+              width: 60%;
+            }
+          }
+        }
+      }
+      .tag-link {
+        display: block;
+        .link {
+          li {
+            padding: 0 16px 0 0;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .blog-content {
+      width: 80%;
+      font-size: 12px;
+      .content {
+        .content1, .content2 {
+          margin: 10px 0;
+        }
+        .content-img {
+          margin: 20px 0;
+          p {
+            img {
+              float: right;
+              width: 60%;
+            }
+          }
         }
       }
     }

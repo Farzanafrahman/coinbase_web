@@ -7,7 +7,7 @@
             <div class="logo">
               <img src="@/assets/img/logo.png" alt="">
             </div>
-            <div class="nav-menu menu">
+            <div class="nav-menu" id="menu">
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
@@ -18,8 +18,10 @@
                     <b-dropdown text="Sell Bitcoin/ Giftcard">
                       <b-dropdown-item>Sell Bitcoin</b-dropdown-item>
                       <b-dropdown-item>Sell Giftcard</b-dropdown-item>
-                    </b-dropdown></a>
+                    </b-dropdown>
+                   </a>
                 </li>
+                <li class="mobile-only"><a href="#">Login</a></li>
               </ul>
             </div>
             <div class="dropdown sellcoin">
@@ -29,7 +31,7 @@
               </b-dropdown>
               <button class="login-btn btn">Login</button>
             </div>
-            <button class="hamburger" id="hamburger" type="button">
+            <button @click="toggleMenu" class="hamburger" id="hamburger" type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
@@ -44,6 +46,15 @@
 <script>
 export default {
  name: "Header",
+ methods: {
+   toggleMenu() {
+     const slide = document.getElementById("hamburger");
+     const menu = document.getElementById("menu");
+     menu.classList.toggle("open");
+     slide.classList.toggle("hamburger--slider");
+     slide.classList.toggle("is-active");
+   }
+ }
 };
 </script>
 
@@ -84,7 +95,7 @@ export default {
       }
     }
   }
-  @media only screen and (min-width: 577px) {
+  @media only screen and (min-width: 993px) {
     .header {
       .nav-menu {
         .mobile-only {
@@ -96,41 +107,49 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 576px) {
-    .header {
-      padding: 20px;
-      .nav-menu {
-        position: fixed;
-        top: 0;
-        height: 100%;
+  @media only screen and (min-width: 576px) {
+    .container {
+      max-width: 878px;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+  .header {
+    padding: 20px;
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      height: 100%;
+      right: -300px;
+      width: 300px;
+      display: block;
+      padding-top: 30px;
+      background: linear-gradient(178.18deg, #5e54cd -13.56%, #FD749B 158.3%);
+      transition: 0.3s;
+      z-index: 50;
+      &.open {
         right: 0;
-        width: 300px;
+      }
+      ul {
         display: block;
-        padding-top: 30px;
-        background-color: rgba(12, 4, 8, 0.603);
-        transition: 0.3s;
-        z-index: 50;
-        ul {
-          display: block;
-          li {
-            padding: 10px;
-            a {
-              display: block;
-              padding: 15px;
-              min-width: 200px;
-              font-size: 18px;
-              font-weight: lighter;
-              color: #fff;
-            }
+        li {
+          padding: 10px;
+          a {
+            display: block;
+            padding: 15px;
+            min-width: 200px;
+            font-size: 18px;
+            font-weight: lighter;
+            color: #fff;
           }
         }
       }
-      .sellcoin {
-        display: none;
-      }
-      .hamburger {
-        padding: 15px 0 15px 10px;
-        z-index: 100;
+    }
+    .sellcoin {
+      display: none;
+    }
+    .hamburger {
+      padding: 15px 0 15px 10px;
+      z-index: 100;
       .hamburger-box {
         .hamburger-inner{
           background-color: #FD749B;
@@ -140,16 +159,8 @@ export default {
         }
       }
     }
-    }
   }
-
-  // @media only screen and (max-width: 991px) {
-  //   .header {
-  //     .nav-menu, .dropdown {
-  //       display: none;
-  //     }
-  //   }
-  // }
+}
 </style>
 
 <style lang="scss">
@@ -173,6 +184,23 @@ export default {
         }
         .dropdown-item:hover {
           background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .header {
+      .nav-menu {
+        ul {
+          li {
+            a {
+              .b-dropdown {
+                .btn-secondary {
+                  background-color: #281AC8;
+                }                          
+              }
+            }
+          }
         }
       }
     }

@@ -34,15 +34,14 @@ export default {
     background-size: cover;
     .intro-content {
       display: flex;
-      align-items: center;
-      padding-top: 20px;
+      // align-items: center;
       color: #fff;
       text-align: left;
       vertical-align: top;
       .intro-text {
         max-width: 40%;
-        margin: 0 50px 50px;
-        padding: 0 42px 50px;
+        margin: 40px;
+        padding: 40px;
         h5 {
           font-weight: 300;
           font-size: 28px;
@@ -63,16 +62,38 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 1080px) {
+  // @media only screen and (max-width: 1080px) {
+  //   .intro-bg {
+  //     .intro-content {
+  //       .intro-img {
+  //         img {
+  //           max-height: 330px;
+  //           margin: 0 0 140px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // } 
+  @media only screen and (max-width: 768px) {
     .intro-bg {
+      background-position: center top;
+      background-size: 260%;
       .intro-content {
+        display: block;
+        text-align: center;
+        .intro-text {
+          max-width: 100%;
+          margin: 20px;
+          padding: 20px;
+        }
         .intro-img {
+          margin: 20px;
           img {
-            max-height: 330px;
-            margin: 0 0 140px;
+            max-height: 280px;
+            margin: 0;
           }
         }
       }
     }
-  } 
+  }
 </style>

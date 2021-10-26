@@ -81,4 +81,20 @@ export default {
       }
     }
   }
+  @media only screen and (max-width: 768px) {
+    .blog-form {
+      width: 80%;
+      .form {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .blog-form {
+      .comment {
+        text-align: center;
+      }
+    }
+  }
 </style>

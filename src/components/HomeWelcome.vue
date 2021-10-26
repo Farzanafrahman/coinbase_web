@@ -80,7 +80,7 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .welcome {
       margin: 20px 0;
       .welcome-content {

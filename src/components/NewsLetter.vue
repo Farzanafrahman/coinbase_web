@@ -84,12 +84,11 @@ export default {
         text-align: center;
         text-transform: uppercase;
         border: none;
-        // width: 40%;
         margin-left: 10px;
       }
     }
   }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 992px) {
     .subscribe {
       margin: 20px;
       .content {
@@ -98,7 +97,7 @@ export default {
           font-size: 16px;
         }
         p {
-          max-width: 50%;
+          max-width: 40%;
         }
       }
       .subscription {

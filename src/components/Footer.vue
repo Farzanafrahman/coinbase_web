@@ -127,11 +127,11 @@ export default {
       }
     }
   }
-  @media only screen and (min-width: 576px) {
-    .footer {
-      .first-col {
-        max-width: 40%;
-      }
-    }
-  }
+  // @media only screen and (min-width: 768px) {
+  //   .footer {
+  //     .first-col {
+  //       max-width: 40%;
+  //     }
+  //   }
+  // }
 </style>

@@ -44,4 +44,20 @@ export default {
       }
     }
   }
+  @media only screen and (max-width: 768px) {
+    .intro-bg {
+      background-position: center top;
+      background-size: 140%;
+      .intro-text {
+        padding: 20px;
+        margin: 40px;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .intro-bg {
+      background-position: center bottom -52px;
+
+    }
+  }
 </style>
